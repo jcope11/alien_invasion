@@ -5,10 +5,11 @@ class GameStats:
         """Initialize statistics"""
         self.settings = ai_game.settings
         self.reset_stats()
-        # Start Alien Invsastion in an active state
+        # Start game in an inactive state.
         self.game_active = True
-
     def reset_stats(self):
         """Initialize statistics that can change during the game."""
         self.ships_left = self.settings.ship_limit
+
+
 
